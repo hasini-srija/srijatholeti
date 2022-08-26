@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+int i;
+char a[50];
+printf("enter a string");
+gets(a);
+for(i=0;a[i]!='\0';i++)
+{
+if(i%2!=0)
+a[i]=a[i]-32;
+}
+puts(a);
+}
